@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.0'
+	id 'io.spring.dependency-management' version '1.1.5'
+}
+
+group = 'com.djiorhan'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.mongodb:mongodb-driver-sync:4.9.1'
+	implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.10.2'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
