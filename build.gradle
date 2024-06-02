@@ -17,6 +17,7 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.mongodb:mongodb-driver-core:4.9.1'
 	implementation 'org.mongodb:mongodb-driver-sync:4.9.1'
 	implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.10.2'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
